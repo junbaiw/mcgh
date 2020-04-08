@@ -1,0 +1,111 @@
+<HTML><HEAD><TITLE>MCGH: Analysising microarray-based CGH 
+experiemnts</TITLE>
+</HEAD><BODY BGCOLOR="FFFFF0"><b></b>
+<br><br>
+<h2><b><A href="http://www.biomedcentral.com/1471-2105/5/74">
+MCGH: Analysing microarray-based CGH experiments</A></b>
+</h2>
+<br>
+<b><A HREF="mailto:junbaiw@radium.uio.no">Junbai Wang</a>*,
+<A HREF="mailto:l.a.meza-zepeda@labmed.uio.no">Leonardo A. Meza-Zepeda 
+</a>*,
+<A HREF="mailto:stinek@radium.uio.no">Stine Henrichson Kresse</a>*,
+and <A HREF="mailto:ola.myklebost@radium.uio.no">Ola Myklebost</a>*
+</b>
+
+
+<br><br>
+<b>Department of Tumour Biology*, Norwegian Radium Hospital, N0310 Oslo, 
+Norway </b>
+<br><br><br> 
+
+<!--start MCGH -->
+<br>
+MCGH is a Matlab toolbox with graphical interface to analysis DNA 
+microarray-based comparative genomic hybridization (CGH) 
+experiments. CGH on DNA microarray enable us to measure the copy numbers 
+of thousands of genes through the 
+genome. M-CGH allows us to visualize the copy number changes 
+(amplifications or deletions) and rapidly identify 
+the amplification or deletion regions by directly loading the export file 
+from microarray image analysis package, 
+such as GenePix and QuantArray.
+
+<P>
+</P>
+<table>
+<tr><td><b>MCGH screen shot</b>
+</td></tr>
+</table>
+<table border=1>
+
+<tr><th></th>
+<th>MCGH Screen shot</th>
+<th>MCGH main window</th>
+<th>MCGH Help </th>
+<th>MCGH Plot 1</th>
+<th>MCGH_Plot 2 </th>
+<th>MCGH_Plot 3 </th>
+</tr><tr><th></th>
+ 
+<tr><th>1</th>
+ 
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+fig3.gif><img width=100 height=100 src=fig3.gif></a></tr></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+MCGH_main.jpg><img width=100 height=100 src=MCGH_main.jpg></a></tr></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+MCGH_help.jpg><img width=100 height=100 src=MCGH_help.jpg></a></tr></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+MCGH_norm.jpg><img width=100 height=100 src=MCGH_norm.jpg></a></tr></td>
+
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href= 
+MCGH_chroPlot.jpg><img width=100 height=100 
+src=MCGH_chroPlot.jpg></a></tr></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href= 
+MCGH_chro1Plot.jpg><img width=100 height=100 
+src=MCGH_chro1Plot.jpg></a></tr></td>
+</table>
+
+<p>
+You can download the MCGH toolbox: <A HREF="mcgh.zip" target="new"> 
+mcgh.zip <FONT COLOR="#FFF200" ></FONT></A>
+
+<!-- You can download the MCGH toolbox <A 
+HREF="http://pubgeneserver.uio.no:8080/mgraph">
+-->
+
+</A>
+<P>
+<P>
+<b>Please read "install.txt" file before installing the MCGH toolbox with 
+Matlab. 
+<P>
+1) New version of M-CGH was updated in 7th of July 2004. 
+Some bugs in the early versions were fixed at here!
+<P> 
+2) M-CGH was updated in 15th of July 2004. Some notes about how to use M-CGH were added in the M-CGH help menue
+<P>
+3) One potential bug in the 
+new Windows version of MATLAB, Jan 2005! If you can not plot individual Chrom. when use
+M-CGH 
+please replace the "break"
+command as "return" in file "mcgh_ChrPlot.m".
+<P>
+To run the program please read the short description of how to use this 
+toolbox in "M-CGH help" menu or the "readme.txt". </b>
+<p>
+<P>
+Note: M-CGH is an open soure program which means you are free to use and modify it by your own interesting.
+Also, you are ready to take the risk of errors and bugs inside program.
+<P>
+
+
+</BODY></HTML>
+

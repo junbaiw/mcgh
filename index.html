@@ -1,0 +1,167 @@
+<HTML><HEAD><TITLE>MCGH: Analysising microarray-based CGH 
+experiemnts</TITLE>
+</HEAD><BODY BGCOLOR="FFFFF0"><b></b>
+<br><br>
+<h2><b><A href="http://www.biomedcentral.com/1471-2105/5/74">
+MCGH: Analysing microarray-based CGH experiments</A></b>
+</h2>
+<br>
+<b><A HREF="mailto:junbaiw@radium.uio.no">Junbai Wang</a>*,
+<A HREF="mailto:l.a.meza-zepeda@labmed.uio.no">Leonardo A. Meza-Zepeda 
+</a>*,
+<A HREF="mailto:stinek@radium.uio.no">Stine Henrichson Kresse</a>*,
+and <A HREF="mailto:ola.myklebost@radium.uio.no">Ola Myklebost</a>*
+</b>
+
+
+<br><br>
+<b>Department of Tumour Biology*, Norwegian Radium Hospital, N0310 Oslo, 
+Norway </b>
+<br><br><br> 
+
+<!--start MCGH -->
+<br>
+MCGH is a Matlab toolbox with graphical interface to analysis DNA 
+microarray-based comparative genomic hybridization (CGH) 
+experiments. CGH on DNA microarray enable us to measure the copy numbers 
+of thousands of genes through the 
+genome. M-CGH allows us to visualize the copy number changes 
+(amplifications or deletions) and rapidly identify 
+the amplification or deletion regions by directly loading the export file 
+from microarray image analysis package, 
+such as GenePix and QuantArray.
+
+<P>
+</P>
+<table>
+<tr><td><b>MCGH screen shot</b>
+</td></tr>
+</table>
+<table border=1>
+
+<tr><th></th>
+<th>MCGH Screen shot</th>
+<th>MCGH main window</th>
+<th>MCGH Help </th>
+<th>MCGH Plot 1</th>
+<th>MCGH_Plot 2 </th>
+<th>MCGH_Plot 3 </th>
+</tr><tr><th></th>
+ 
+<tr><th>1</th>
+ 
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+fig3.gif><img width=100 height=100 src=fig3.gif></a></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+MCGH_main.jpg><img width=100 height=100 src=MCGH_main.jpg></a></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+MCGH_help.jpg><img width=100 height=100 src=MCGH_help.jpg></a></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href=
+MCGH_norm.jpg><img width=100 height=100 src=MCGH_norm.jpg></a></td>
+
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href= 
+MCGH_chroPlot.jpg><img width=100 height=100 
+src=MCGH_chroPlot.jpg></a></td>
+<td height=104 width=104 valign=top align=center><a target=mcgh_screen 
+href= 
+MCGH_chro1Plot.jpg><img width=100 height=100 
+src=MCGH_chro1Plot.jpg></a></tr></td>
+</table>
+
+<p>
+<b>Download:</b>
+<br>
+You can download the MCGH toolbox: <A HREF="http://www.mathworks.com/matlabcentral/fileexchange/14633" target="new"> 
+mcgh.tar.gz <FONT COLOR="#FFF200" ></FONT></A>
+<br>
+<br>
+<b>Please read "install.txt" and license file before installing the Matlab toolbox.
+<br>
+Feel free to use the package in your academic research. If you use it, please
+cite the following paper:</b>
+<br>
+Wang J, Meza-Zepeda LA, Kresse SH, Myklebost O.
+<br>
+M-CGH: analysing microarray-based CGH experiments.
+<br>
+BMC Bioinformatics. 2004 Jun 9;5:74. 
+
+<!-- You can download the MCGH toolbox <A 
+HREF="http://pubgeneserver.uio.no:8080/mgraph">
+-->
+
+</A>
+<P>
+<P>
+<P>
+<b>Note:</b>
+<br>
+1) 7th of July 2004: New version of M-CGH was updated. 
+Some bugs in the early versions were fixed at here!
+<P> 
+2) 15th of July 2004: Some notes about how to use M-CGH were added in the M-CGH help menue
+<P>
+3) Jan. 2005: One bug in the new Windows version of MATLAB. If you can not plot
+individual Chroms. in the M-CGH please replace "break" command as "return" in file "mcgh_ChrPlot.m".
+<P>
+4) Feb. 2005: Some minor bugs in "MCGH property" window have been fixed. Please download the toolbox and replace the 
+old files with new ones in your MATLAB. Thanks the bug report from Jessica J. Connelly in Duke university!
+<P>
+5) Apr. 2005: Now, MCGH can handle the input data with single spot if there is no duplicated clones.
+<p>
+6) May. 2005: Added a pop-up menu to choose ratio=532/635 or 635/532 when the input data is GenePix format.
+<p>
+7) May. 2005: Added a color list which will label spots as different color according to their pre-defined classes, a sample color list is 
+<A HREF="list_of_three_classes.csv" target="new"> list_of_three_classes.csv <FONT COLOR="#FFF200"> </FONT></A>. Currently, MCGH only support five different types 
+of colors! 
+<p>
+8) May. 2005: Added a list of information about missing spots, i.e. the number of spots which are flaged, filtered and no clone location
+information will be displayed in the main window of MATLAB.
+<p>
+9) May. 2005: For Amplicon boundary estimation, Wavelet approach is faster and better than fuzzy knn method when the 
+input data is large. 
+<p>
+10) June. 2005: For "M-CGH Property", added N*Background Intensity in "Signal to noise level".                     
+<p>
+11) July. 2005: A problem of convergence for certain dataset is solved in MCGH. 
+<p>
+12) August. 2005: A manual adjustion of ratio (reference vs. control sample / constant value) is added in MCGH.  
+<P>
+13) Oct. 2005: Improvement was made in loading and exporting data.
+<P>
+14) Nov. 2005: Some features of MCGH. All plot and figures in MCGH are interactive that means a red 
+circle will be marked when you click a spot on the figure. You 
+can remove such circle by clicking the button 'Refesh figure of raw ratio 
+plot' or 'Genome plot with mean centered Ratio'. The information of red circled 
+spot will be shown at the rightdown corner of MCGH main window. The 'M-CGH 
+find clone' function can help you locate the clone that you are interested in the figure by 
+inputing its name. 
+<p>
+15) Sep. 2006: The data input function was improved. Now, MCGH is able to load GenePix file that contains 
+the empty cell.
+<p>
+16) Nov. 2006: An easy way to add the M-CGH toolbox to the MATLAB search path, please copy below script <A HREF="use_mcgh.m" target="new">use_mcgh.m</A> to your MCGH folder then type use_mcgh(1) for adding path or use_mcgh(0) for removing path in the MATLAB main window.
+<p>
+To run the program please read the short description of how to use this 
+toolbox in "M-CGH help" menu or the "readme.txt". Comments and questions about the toolbox please send email to Junbai Wang (<b> jw2256@columbia.edu</b> )</b>
+<p>
+<P>
+M-CGH is an open soure program which means you are free to use and modify it by your own interesting.
+Also, you are ready to take the risk of errors and bugs inside program.
+<P>
+<!-- Begin Motigo Webstats counter code -->
+<a id="mws3975624" href="http://webstats.motigo.com/">
+<img width="80" height="15" border="0" alt="Free counter and web stats" src="http://m1.webstats.motigo.com/n80x15.gif?id=ADypyAuNQ/3r4u5sF/N0FrfwsLDw" /></a>
+<script src="http://m1.webstats.motigo.com/c.js?id=3975624&i=3" type="text/javascript"></script>
+<!-- End Motigo Webstats counter code -->
+
+
+
+
+</BODY></HTML>
+
